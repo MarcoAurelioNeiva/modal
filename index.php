@@ -18,9 +18,9 @@
 	.modal-content {
 		position: relative;
 		background-color: #fefefe; 
-		margin:auto;
-		padding: 20px;
-		border: 1px solid #888;
+		margin:15% auto;
+		padding: 0px;
+		border: 1px solid yellow;
 		width: 80%;
 	}
 	.close{
@@ -34,6 +34,24 @@
 		text-decoration: none;
 		cursor: pointer;
 	}
+	.modal-header{
+		padding: 2px 16px ;
+		background-color: #5cb85c;
+		color: white;
+		display:flex;
+		justify-content:space-between;
+		align-items:center;
+	}
+	.modal-header h2{
+		flex-grow:1;
+		margin: 0 12px;
+	}
+	.modal-body{padding:2px 16px;}
+	.modal-footer{
+		padding: 2px 16px;
+		background-color:#5cb85c;
+		color: white;
+	}
 
 </style>
 </head>
@@ -43,17 +61,20 @@
 
 	<div id="mymodal" class="modal">
 		<div class="modal-content">
-			<div class="modal-header"></div>
-			<span class="close">&times;</span>
-			<h2>modal Header</h2>
+			<div class="modal-header">
+				<span class="close">&times;</span>				
+				<h2>modal Header</h2>		
+			</div>
+
+			<div class="modal-body">
+				<p>123</p>
+				<p>321</p>
+			</div>
+			<div class="modal-footer">
+				<h3>iiiiaiii</h3>
+			</div>
 		</div>
-		<div class="modal-body">
-			<p>123</p>
-			<p>321</p>
-		</div>
-		<div class="modal-footer">
-			<h3>iiiiaiii</h3>
-		</div>
+
 	</div>
 
 	<script>
